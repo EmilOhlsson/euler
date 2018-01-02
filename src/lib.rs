@@ -5,6 +5,7 @@ use clipboard::ClipboardContext;
 
 pub mod big;
 pub mod series;
+mod constants;
 
 /// Macro for printing answer to standard output, with newline, and paste it into clipboard
 #[macro_export]
