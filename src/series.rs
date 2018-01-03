@@ -84,6 +84,7 @@ where
             {
                 candidate = candidate + inc;
             }
+            self.primes.push(candidate);
             result = Some(candidate);
         }
         self.produced += 1;
