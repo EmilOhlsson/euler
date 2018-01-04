@@ -3,8 +3,9 @@ extern crate clipboard;
 use clipboard::ClipboardProvider;
 use clipboard::ClipboardContext;
 
-pub mod big;
 pub mod series;
+pub mod math;
+pub mod checkers;
 mod constants;
 
 /// Macro for printing answer to standard output, with newline, and paste it into clipboard
