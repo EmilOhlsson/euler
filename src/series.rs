@@ -1,4 +1,4 @@
-use std::ops::{Add, Div, Rem};
+use std::ops::{Add, AddAssign, Div, Rem};
 use std::cmp::Ord;
 
 use constants;
@@ -31,6 +31,39 @@ where
         self.p0 = self.p1;
         self.p1 = nxt;
         Some(nxt)
+    }
+}
+
+pub struct Triangles<T>
+where
+    T: AddAssign<usize> + AddAssign<usize> + Clone,
+{
+    prev: T,
+    i: usize,
+}
+
+impl<T> Triangles<T>
+where
+    T: AddAssign<usize> + From<usize> + Clone,
+{
+    pub fn new() -> Triangles<T> {
+        Triangles {
+            prev: T::from(0),
+            i: 1,
+        }
+    }
+}
+
+impl<T> Iterator for Triangles<T>
+where
+    T: AddAssign<usize> + From<usize> + Clone,
+{
+    type Item = T;
+
+    fn next(&mut self) -> Option<T> {
+        self.prev += self.i;
+        self.i += 1;
+        Some(self.prev.clone())
     }
 }
 

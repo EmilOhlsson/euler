@@ -1,4 +1,5 @@
-use std::ops::{Add, Div, Mul, Rem, Sub};
+use series::Primes;
+use std::ops::{Add, Div, DivAssign, Mul, Rem, Sub};
 
 pub fn digitsum<T>(n: &T) -> T
 where
@@ -28,4 +29,32 @@ where
     }
 
     result
+}
+
+pub fn factorize<T>(mut n: T) -> Vec<usize>
+where
+    T: DivAssign<usize> + PartialEq<usize> + Rem<usize, Output = usize> + From<usize> + Copy,
+{
+    let primes: Primes<usize> = Primes::new();
+    let mut factors = Vec::new();
+
+    for p in primes {
+        if n % p == 0 {
+            factors.push(p);
+            while n % p == 0 {
+                n /= p;
+            }
+        }
+        if n == 1 {
+            break;
+        }
+    }
+
+    factors
+}
+
+pub fn divisors(n: &usize) -> Vec<usize> {
+    (2..(*n / 2 + 2))
+        .filter(|d| *n % d == 0)
+        .collect::<Vec<usize>>()
 }
