@@ -1,7 +1,44 @@
-use std::ops::{Add, AddAssign, Div, Rem};
+use std::ops::{Add, AddAssign, Div, Mul, Rem};
 use std::cmp::Ord;
 
 use constants;
+use math::collatz;
+
+pub struct Collatz<T> {
+    n: T,
+}
+
+impl<T> Collatz<T>
+where
+    T: Copy
+        + Rem<usize, Output = T>
+        + Div<usize, Output = T>
+        + Add<usize, Output = T>
+        + Mul<usize, Output = T>
+        + PartialEq<usize>,
+{
+    pub fn new(n: T) -> Collatz<T> {
+        Collatz { n: n }
+    }
+}
+
+impl<T> Iterator for Collatz<T>
+where
+    T: Copy
+        + Rem<usize, Output = T>
+        + Div<usize, Output = T>
+        + Add<usize, Output = T>
+        + Mul<usize, Output = T>
+        + PartialEq<usize>,
+{
+    type Item = T;
+
+    fn next(&mut self) -> Option<T> {
+        let n = self.n;
+        self.n = collatz(self.n);
+        Some(n)
+    }
+}
 
 pub struct Fibonacci<T>
 where

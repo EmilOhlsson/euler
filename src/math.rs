@@ -1,6 +1,18 @@
 use series::Primes;
 use std::ops::{Add, Div, DivAssign, Mul, Rem, Sub};
 
+pub fn collatz<T>(n: T) -> T
+where
+    T: Copy
+        + Rem<usize, Output = T>
+        + Div<usize, Output = T>
+        + Add<usize, Output = T>
+        + Mul<usize, Output = T>
+        + PartialEq<usize>,
+{
+    if n % 2 == 0 { n / 2 } else { n * 3 + 1 }
+}
+
 pub fn digitsum<T>(n: &T) -> T
 where
     T: Add<Output = T> + Rem<usize, Output = T> + Div<usize, Output = T> + Ord + Clone + From<usize>,
