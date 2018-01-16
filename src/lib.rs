@@ -6,6 +6,7 @@ use clipboard::ClipboardContext;
 pub mod series;
 pub mod math;
 pub mod checkers;
+pub mod graph;
 mod constants;
 
 /// Macro for printing answer to standard output, with newline, and paste it into clipboard
