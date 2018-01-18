@@ -7,6 +7,7 @@ pub mod series;
 pub mod math;
 pub mod checkers;
 pub mod graph;
+pub mod representations;
 mod constants;
 
 /// Macro for printing answer to standard output, with newline, and paste it into clipboard
