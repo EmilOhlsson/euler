@@ -70,3 +70,9 @@ pub fn divisors(n: &usize) -> Vec<usize> {
         .filter(|d| *n % d == 0)
         .collect::<Vec<usize>>()
 }
+
+pub fn divisors1(n: &usize) -> Vec<usize> {
+    (1..(*n / 2 + 2))
+        .filter(|d| *n % d == 0)
+        .collect::<Vec<usize>>()
+}
