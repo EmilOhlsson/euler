@@ -71,8 +71,19 @@ pub fn divisors(n: &usize) -> Vec<usize> {
         .collect::<Vec<usize>>()
 }
 
-pub fn divisors1(n: &usize) -> Vec<usize> {
-    (1..(*n / 2 + 2))
+pub fn divisors_proper(n: &usize) -> Vec<usize> {
+    (1..(*n / 2 + 1))
         .filter(|d| *n % d == 0)
         .collect::<Vec<usize>>()
+}
+
+#[test]
+fn test_divisors_proper() {
+    assert_eq!(divisors_proper(&1), vec![]);
+    assert_eq!(divisors_proper(&2), vec![1]);
+    assert_eq!(divisors_proper(&12), vec![1, 2, 3, 4, 6]);
+}
+
+pub fn is_perfect(n: &usize) -> bool {
+    *n == divisors_proper(n).iter().sum::<usize>()
 }
