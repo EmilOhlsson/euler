@@ -17,8 +17,8 @@ fn find_max(
         return v;
     }
 
-    let sum = pyramid[row][col] +
-        max(
+    let sum = pyramid[row][col]
+        + max(
             find_max(pyramid, cached, row + 1, col),
             find_max(pyramid, cached, row + 1, col + 1),
         );

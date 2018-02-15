@@ -1,5 +1,5 @@
 use std::hash::Hash;
-use std::collections::{HashMap, HashSet, BinaryHeap};
+use std::collections::{BinaryHeap, HashMap, HashSet};
 use std::cmp::Ordering;
 use std::rc::Rc;
 use std::usize;

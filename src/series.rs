@@ -129,12 +129,7 @@ where
 
 impl<T> Iterator for Primes<T>
 where
-    T: Add<Output = T>
-        + Rem<Output = T>
-        + Div<Output = T>
-        + Ord
-        + Copy
-        + From<usize>,
+    T: Add<Output = T> + Rem<Output = T> + Div<Output = T> + Ord + Copy + From<usize>,
 {
     type Item = T;
 

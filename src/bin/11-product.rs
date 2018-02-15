@@ -20,17 +20,14 @@ fn find_max(mtx: &Vec<Vec<isize>>) -> isize {
         for c in 0..len {
             let ver = (0..4).map(|o| getval(mtx, r - o, c)).fold(1, |a, v| a * v);
             let hor = (0..4).map(|o| getval(mtx, r, c - o)).fold(1, |a, v| a * v);
-            let dl = (0..4).map(|o| getval(mtx, r - o, c - o)).fold(
-                1,
-                |a, v| a * v,
-            );
-            let dr = (0..4).map(|o| getval(mtx, r - o, c + o)).fold(
-                1,
-                |a, v| a * v,
-            );
+            let dl = (0..4)
+                .map(|o| getval(mtx, r - o, c - o))
+                .fold(1, |a, v| a * v);
+            let dr = (0..4)
+                .map(|o| getval(mtx, r - o, c + o))
+                .fold(1, |a, v| a * v);
             let m = max(ver, max(hor, max(dl, dr)));
             mx = max(m, mx);
-
         }
     }
 

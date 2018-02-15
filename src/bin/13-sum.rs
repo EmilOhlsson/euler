@@ -1,7 +1,6 @@
-#[macro_use]
-
-extern crate project_euler;
 extern crate num;
+#[macro_use]
+extern crate project_euler;
 
 use num::bigint::BigUint;
 use num::Zero;

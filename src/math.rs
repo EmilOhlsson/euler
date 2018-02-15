@@ -10,12 +10,21 @@ where
         + Mul<usize, Output = T>
         + PartialEq<usize>,
 {
-    if n % 2 == 0 { n / 2 } else { n * 3 + 1 }
+    if n % 2 == 0 {
+        n / 2
+    } else {
+        n * 3 + 1
+    }
 }
 
 pub fn digitsum<T>(n: &T) -> T
 where
-    T: Add<Output = T> + Rem<usize, Output = T> + Div<usize, Output = T> + Ord + Clone + From<usize>,
+    T: Add<Output = T>
+        + Rem<usize, Output = T>
+        + Div<usize, Output = T>
+        + Ord
+        + Clone
+        + From<usize>,
 {
     let mut v = n.clone();
     let mut sum: T = T::from(0);

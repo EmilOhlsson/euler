@@ -1,6 +1,6 @@
+extern crate num;
 #[macro_use]
 extern crate project_euler;
-extern crate num;
 
 use num::bigint::BigUint;
 use project_euler::math::digitsum;

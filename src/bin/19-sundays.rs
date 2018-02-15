@@ -1,8 +1,8 @@
+extern crate chrono;
 #[macro_use]
 extern crate project_euler;
-extern crate chrono;
 
-use chrono::{NaiveDate, Datelike, Weekday};
+use chrono::{Datelike, NaiveDate, Weekday};
 
 fn main() {
     let mut date = NaiveDate::from_ymd(1901, 1, 1);
