@@ -40,6 +40,30 @@ where
     }
 }
 
+pub struct Digits {
+    n: usize,
+}
+
+impl Digits {
+    pub fn new(n: usize) -> Digits {
+        Digits { n: n }
+    }
+}
+
+impl Iterator for Digits {
+    type Item = usize;
+
+    fn next(&mut self) -> Option<usize> {
+        if &self.n > &0 {
+            let res = self.n % 10;
+            self.n /= 10;
+            return Some(res);
+        } else {
+            return None;
+        }
+    }
+}
+
 pub struct Fibonacci<T>
 where
     T: Add<Output = T> + Clone,
