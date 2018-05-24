@@ -4,6 +4,6 @@ version = "0.1.0"
 authors = ["Emil Ohlsson <emil@kottland.net>"]
 
 [dependencies]
-num = "0.1.41"
+num = "0.1.42"
 clipboard ="0.4.2"
 chrono = "0.4.0"

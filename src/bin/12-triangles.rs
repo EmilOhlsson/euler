@@ -1,8 +1,8 @@
 #[macro_use]
 extern crate project_euler;
 
-use project_euler::series::Triangles;
 use project_euler::math::divisors;
+use project_euler::series::Triangles;
 
 fn main() {
     let t = Triangles::new();
