@@ -1,5 +1,5 @@
-use std::ops::{Add, AddAssign, Div, Mul, Rem};
 use std::cmp::Ord;
+use std::ops::{Add, AddAssign, Div, Mul, Rem};
 
 use constants;
 use math::collatz;

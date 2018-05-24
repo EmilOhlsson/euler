@@ -1,5 +1,7 @@
 use series::Primes;
-use std::ops::{Add, Div, DivAssign, Mul, Rem, Sub};
+use std::ops::*;
+
+use num;
 
 pub fn collatz<T>(n: T) -> T
 where
@@ -36,17 +38,16 @@ where
     sum
 }
 
-pub fn faculty<T>(n: &T) -> T
+pub fn faculty<T>(mut n: T) -> T
 where
-    T: Sub<usize, Output = T> + Mul<Output = T> + Ord + Clone + From<usize>,
+    for<'a> T: num::Integer + num::Unsigned + MulAssign<&'a T> + SubAssign<&'a T>,
 {
-    let one = T::from(1);
-    let mut result: T = T::from(1);
-    let mut i = n.clone();
+    let one: T = T::one();
+    let mut result: T = T::one();
 
-    while &i > &one {
-        result = result * i.clone();
-        i = i - 1;
+    while n > one {
+        result *= &n;
+        n -= &one;
     }
 
     result

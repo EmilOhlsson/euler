@@ -2,8 +2,8 @@ extern crate num;
 #[macro_use]
 extern crate project_euler;
 
-use num::bigint::BigUint;
 use num::Zero;
+use num::bigint::BigUint;
 
 fn main() {
     let input = include_str!("input-13");

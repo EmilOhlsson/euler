@@ -1,8 +1,8 @@
 #[macro_use]
 extern crate project_euler;
 
-use std::rc::Rc;
 use project_euler::graph::{count_paths, Vertex};
+use std::rc::Rc;
 
 #[derive(Hash, Eq, PartialEq, Debug)]
 struct State {

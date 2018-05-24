@@ -1,9 +1,9 @@
-use std::hash::Hash;
-use std::collections::{BinaryHeap, HashMap, HashSet};
 use std::cmp::Ordering;
+use std::collections::{BinaryHeap, HashMap, HashSet};
+use std::fmt::Debug;
+use std::hash::Hash;
 use std::rc::Rc;
 use std::usize;
-use std::fmt::Debug;
 
 pub trait Vertex {
     fn neighbors(&self) -> Vec<Rc<Self>>;

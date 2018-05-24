@@ -1,8 +1,8 @@
 #[macro_use]
 extern crate project_euler;
 
-use std::collections::HashSet;
 use project_euler::series::Primes;
+use std::collections::HashSet;
 
 fn main() {
     let mut a_best = 0;

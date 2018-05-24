@@ -1,8 +1,8 @@
 #[macro_use]
 extern crate project_euler;
 
-use std::cmp;
 use project_euler::checkers::is_palindrome;
+use std::cmp;
 
 fn main() {
     let mut max_palindrome = 0;

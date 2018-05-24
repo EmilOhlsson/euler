@@ -1,8 +1,8 @@
 #[macro_use]
 extern crate project_euler;
 
-use std::collections::HashMap;
 use std::cmp::max;
+use std::collections::HashMap;
 
 fn find_max(
     pyramid: &Vec<Vec<usize>>,

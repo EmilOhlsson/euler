@@ -8,7 +8,7 @@ fn is_pandigital(a: usize, b: usize, c: usize) -> bool {
     if text.chars().filter(|&n| n == '0').count() != 0 {
         return false;
     }
-    
+
     for c in "123456789".chars() {
         if text.chars().filter(|&n| n == c).count() != 1 {
             return false;

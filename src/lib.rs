@@ -1,15 +1,16 @@
-extern crate clipboard;
+pub extern crate clipboard;
+pub extern crate num;
 
-use clipboard::ClipboardProvider;
 use clipboard::ClipboardContext;
+use clipboard::ClipboardProvider;
 
-pub mod series;
-pub mod math;
 pub mod checkers;
-pub mod graph;
-pub mod representations;
-pub mod sets;
 mod constants;
+pub mod graph;
+pub mod math;
+pub mod representations;
+pub mod series;
+pub mod sets;
 
 /// Macro for printing answer to standard output, with newline, and paste it into clipboard
 #[macro_export]
