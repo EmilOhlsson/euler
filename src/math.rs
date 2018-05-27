@@ -5,17 +5,12 @@ use num;
 
 pub fn collatz<T>(n: T) -> T
 where
-    T: Copy
-        + Rem<usize, Output = T>
-        + Div<usize, Output = T>
-        + Add<usize, Output = T>
-        + Mul<usize, Output = T>
-        + PartialEq<usize>,
+    T: num::Integer + num::Unsigned + num::FromPrimitive,
 {
-    if n % 2 == 0 {
-        n / 2
+    if n.is_even() {
+        n / T::from_u32(2).unwrap()
     } else {
-        n * 3 + 1
+        n * T::from_u32(3).unwrap() + T::one()
     }
 }
 

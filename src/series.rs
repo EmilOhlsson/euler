@@ -1,5 +1,6 @@
+use num;
 use std::cmp::Ord;
-use std::ops::{Add, AddAssign, Div, Mul, Rem};
+use std::ops::*;
 
 use constants;
 use math::collatz;
@@ -24,12 +25,7 @@ where
 
 impl<T> Iterator for Collatz<T>
 where
-    T: Copy
-        + Rem<usize, Output = T>
-        + Div<usize, Output = T>
-        + Add<usize, Output = T>
-        + Mul<usize, Output = T>
-        + PartialEq<usize>,
+    T: num::Integer + num::Unsigned + num::FromPrimitive + Copy,
 {
     type Item = T;
 
