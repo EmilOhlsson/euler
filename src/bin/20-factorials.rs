@@ -7,6 +7,6 @@ use cch_utils::math::{digitsum, faculty};
 use num::bigint::BigUint;
 
 fn main() {
-    let sum = digitsum(&faculty(BigUint::from(100usize)));
+    let sum = digitsum(faculty(BigUint::from(100usize)));
     answer!("{}", sum);
 }

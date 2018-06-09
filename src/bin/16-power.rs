@@ -10,5 +10,5 @@ fn main() {
     for _ in 1..1000 {
         pow = pow * 2usize;
     }
-    answer!("{}", digitsum(&pow));
+    answer!("{}", digitsum(pow));
 }
