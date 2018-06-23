@@ -1,6 +1,6 @@
 extern crate chrono;
 #[macro_use]
-extern crate project_euler;
+extern crate cch_utils;
 
 use chrono::{Datelike, NaiveDate, Weekday};
 

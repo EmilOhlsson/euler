@@ -1,5 +1,5 @@
 #[macro_use]
-extern crate project_euler;
+extern crate cch_utils;
 
 fn main() {
     let input = include_str!("input-08");

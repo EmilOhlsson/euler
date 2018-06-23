@@ -1,9 +1,9 @@
 extern crate num;
 #[macro_use]
-extern crate project_euler;
+extern crate cch_utils;
 
+use cch_utils::series::Fibonacci;
 use num::bigint::BigUint;
-use project_euler::series::Fibonacci;
 
 fn main() {
     let fib = Fibonacci::new(BigUint::from(0u32), BigUint::from(1u32));

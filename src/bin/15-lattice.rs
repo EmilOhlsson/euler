@@ -1,7 +1,7 @@
 #[macro_use]
-extern crate project_euler;
+extern crate cch_utils;
 
-use project_euler::graph::{count_paths, Vertex};
+use cch_utils::graph::{count_paths, Vertex};
 use std::rc::Rc;
 
 #[derive(Hash, Eq, PartialEq, Debug)]

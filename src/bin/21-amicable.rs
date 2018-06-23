@@ -1,7 +1,7 @@
 #[macro_use]
-extern crate project_euler;
+extern crate cch_utils;
 
-use project_euler::math::divisors_proper;
+use cch_utils::math::divisors_proper;
 
 fn main() {
     let mut sum = 0;

@@ -1,7 +1,7 @@
 #[macro_use]
-extern crate project_euler;
+extern crate cch_utils;
 
-use project_euler::series::Primes;
+use cch_utils::series::Primes;
 use std::collections::HashSet;
 
 fn main() {

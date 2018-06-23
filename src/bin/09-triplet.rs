@@ -1,5 +1,5 @@
 #[macro_use]
-extern crate project_euler;
+extern crate cch_utils;
 
 fn main() {
     for a in 1..999 {

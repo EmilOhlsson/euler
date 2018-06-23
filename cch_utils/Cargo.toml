@@ -1,9 +1,8 @@
 [package]
-name = "project-euler"
+name = "cch_utils"
 version = "0.1.0"
 authors = ["Emil Ohlsson <emil@kottland.net>"]
 
 [dependencies]
-num = "0.1.42"
-chrono = "0.4.0"
-cch_utils = { path = "cch_utils" }
+num = "0.1.41"
+clipboard ="0.4.2"

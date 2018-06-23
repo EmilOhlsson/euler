@@ -22,7 +22,7 @@ pub fn textualize(n: usize) -> String {
         "nineteen",
     ];
     let tens = [
-        "", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"
+        "", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety",
     ];
     let pows = ["", "ten", "hundred", "thousand"];
 

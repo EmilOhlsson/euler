@@ -1,5 +1,5 @@
 #[macro_use]
-extern crate project_euler;
+extern crate cch_utils;
 
 fn main() {
     let mut names = include_str!("input-22")

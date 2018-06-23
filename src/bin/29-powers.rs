@@ -1,6 +1,6 @@
 extern crate num;
 #[macro_use]
-extern crate project_euler;
+extern crate cch_utils;
 
 use num::bigint::BigUint;
 use std::collections::HashSet;

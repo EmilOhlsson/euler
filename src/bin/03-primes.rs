@@ -1,7 +1,7 @@
 #[macro_use]
-extern crate project_euler;
+extern crate cch_utils;
 
-use project_euler::math::factorize;
+use cch_utils::math::factorize;
 
 fn main() {
     let factors = factorize(600_851_475_143);

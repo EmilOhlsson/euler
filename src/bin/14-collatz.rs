@@ -1,7 +1,7 @@
 #[macro_use]
-extern crate project_euler as euler;
+extern crate cch_utils;
 
-use euler::series::Collatz;
+use cch_utils::series::Collatz;
 
 fn main() {
     answer!(

@@ -1,7 +1,7 @@
 #[macro_use]
-extern crate project_euler;
+extern crate cch_utils;
 
-use project_euler::checkers::is_palindrome;
+use cch_utils::checkers::is_palindrome;
 use std::cmp;
 
 fn main() {

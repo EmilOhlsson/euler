@@ -1,7 +1,7 @@
 #[macro_use]
-extern crate project_euler;
+extern crate cch_utils;
 
-use project_euler::representations::textualize;
+use cch_utils::representations::textualize;
 
 fn main() {
     answer!("{}", (1..1001).map(|n| textualize(n).len()).sum::<usize>());

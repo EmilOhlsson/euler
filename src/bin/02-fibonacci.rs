@@ -1,7 +1,7 @@
 #[macro_use]
-extern crate project_euler;
+extern crate cch_utils;
 
-use project_euler::series::Fibonacci;
+use cch_utils::series::Fibonacci;
 
 fn main() {
     let fib = Fibonacci::new(0, 1);

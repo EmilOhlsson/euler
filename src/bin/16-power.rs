@@ -1,9 +1,9 @@
 extern crate num;
 #[macro_use]
-extern crate project_euler;
+extern crate cch_utils;
 
+use cch_utils::math::digitsum;
 use num::bigint::BigUint;
-use project_euler::math::digitsum;
 
 fn main() {
     let mut pow = BigUint::from(2usize);

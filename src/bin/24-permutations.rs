@@ -1,7 +1,7 @@
 #[macro_use]
-extern crate project_euler;
+extern crate cch_utils;
 
-use project_euler::sets::permutations;
+use cch_utils::sets::permutations;
 
 fn main() {
     let mut v = vec![0, 1, 2, 3, 4, 5, 6, 7, 8, 9];

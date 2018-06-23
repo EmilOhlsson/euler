@@ -1,5 +1,5 @@
 #[macro_use]
-extern crate project_euler;
+extern crate cch_utils;
 
 use std::cmp::max;
 use std::collections::HashMap;

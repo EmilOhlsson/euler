@@ -1,9 +1,10 @@
 extern crate num;
-#[macro_use]
-extern crate project_euler;
 
-use num::Zero;
+#[macro_use]
+extern crate cch_utils;
+
 use num::bigint::BigUint;
+use num::Zero;
 
 fn main() {
     let input = include_str!("input-13");

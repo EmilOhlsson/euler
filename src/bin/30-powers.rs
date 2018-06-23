@@ -1,7 +1,7 @@
 #[macro_use]
-extern crate project_euler;
+extern crate cch_utils;
 
-use project_euler::series::Digits;
+use cch_utils::series::Digits;
 
 fn main() {
     let mut sum = 0;
