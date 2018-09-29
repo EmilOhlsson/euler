@@ -1,5 +1,5 @@
 #[macro_use]
-extern crate cch_utils;
+extern crate coding_challenge_utils;
 
 fn main() {
     let diags = (1..501)

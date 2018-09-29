@@ -1,8 +1,8 @@
 extern crate num;
 #[macro_use]
-extern crate cch_utils;
+extern crate coding_challenge_utils;
 
-use cch_utils::math::digitsum;
+use coding_challenge_utils::math::digitsum;
 use num::bigint::BigUint;
 
 fn main() {

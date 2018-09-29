@@ -1,8 +1,8 @@
 extern crate num;
 #[macro_use]
-extern crate cch_utils;
+extern crate coding_challenge_utils;
 
-use cch_utils::series::Fibonacci;
+use coding_challenge_utils::series::Fibonacci;
 use num::bigint::BigUint;
 
 fn main() {

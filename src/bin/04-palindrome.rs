@@ -1,7 +1,7 @@
 #[macro_use]
-extern crate cch_utils;
+extern crate coding_challenge_utils;
 
-use cch_utils::checkers::is_palindrome;
+use coding_challenge_utils::checkers::is_palindrome;
 use std::cmp;
 
 fn main() {

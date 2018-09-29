@@ -1,8 +1,8 @@
 #[macro_use]
-extern crate cch_utils;
+extern crate coding_challenge_utils;
 
-use cch_utils::math::divisors;
-use cch_utils::series::Triangles;
+use coding_challenge_utils::math::divisors;
+use coding_challenge_utils::series::Triangles;
 
 fn main() {
     let t = Triangles::new();

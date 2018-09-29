@@ -1,7 +1,7 @@
 #[macro_use]
-extern crate cch_utils;
+extern crate coding_challenge_utils;
 
-use cch_utils::math::factorize;
+use coding_challenge_utils::math::factorize;
 
 fn main() {
     let factors = factorize(600_851_475_143);

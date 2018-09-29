@@ -1,7 +1,7 @@
 #[macro_use]
-extern crate cch_utils;
+extern crate coding_challenge_utils;
 
-use cch_utils::math::divisors_proper;
+use coding_challenge_utils::math::divisors_proper;
 
 fn main() {
     let mut sum = 0;
