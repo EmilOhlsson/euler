@@ -1,5 +1,5 @@
 #[macro_use]
-extern crate cch_utils;
+extern crate coding_challenge_utils;
 
 fn rec(coins: &Vec<usize>, i: usize, acc: usize, target: usize) -> usize {
     if let Some(coin) = coins.get(i) {

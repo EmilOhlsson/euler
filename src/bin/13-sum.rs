@@ -1,7 +1,7 @@
 extern crate num;
 
 #[macro_use]
-extern crate cch_utils;
+extern crate coding_challenge_utils;
 
 use num::bigint::BigUint;
 use num::Zero;

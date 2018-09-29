@@ -1,7 +1,7 @@
 #[macro_use]
-extern crate cch_utils;
+extern crate coding_challenge_utils;
 
-use cch_utils::series::Digits;
+use coding_challenge_utils::series::Digits;
 
 fn main() {
     let mut sum = 0;

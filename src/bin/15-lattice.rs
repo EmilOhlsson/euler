@@ -1,7 +1,7 @@
 #[macro_use]
-extern crate cch_utils;
+extern crate coding_challenge_utils;
 
-use cch_utils::graph::{count_paths, Vertex};
+use coding_challenge_utils::graph::{count_paths, Vertex};
 use std::rc::Rc;
 
 #[derive(Hash, Eq, PartialEq, Debug)]

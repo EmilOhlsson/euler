@@ -6,4 +6,4 @@ authors = ["Emil Ohlsson <emil@kottland.net>"]
 [dependencies]
 num = "0.1.42"
 chrono = "0.4.0"
-cch_utils = { path = "cch_utils" }
+coding-challenge-utils = { git = "https://github.com/EmilOhlsson/coding-challenge-utils.git" }

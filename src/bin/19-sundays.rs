@@ -1,6 +1,6 @@
 extern crate chrono;
 #[macro_use]
-extern crate cch_utils;
+extern crate coding_challenge_utils;
 
 use chrono::{Datelike, NaiveDate, Weekday};
 

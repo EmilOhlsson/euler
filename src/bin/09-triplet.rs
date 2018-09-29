@@ -1,5 +1,5 @@
 #[macro_use]
-extern crate cch_utils;
+extern crate coding_challenge_utils;
 
 fn main() {
     for a in 1..999 {
